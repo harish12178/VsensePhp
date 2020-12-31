@@ -1,0 +1,184 @@
+<div class="w3-content w3-margin-top w3-margin-bottom" style="max-width: 100%;">
+  <!-- The Grid -->
+  <div class="w3-row-padding w3-black" style="width: 100%; float:center;">
+    <!-- Left Column -->
+    <div class="w3-third" style="float:left">
+      <div class="w3-white w3-text-grey w3-card-4" style="height: 44rem;">
+        <div class="w3-display-container" align="center">
+          <img src="assets/images/11.png" style="width:60%" alt="Avatar" align="center">
+          <div class="w3-display-bottomleft w3-container w3-text-black">
+            <h2>web monitoring</h2>
+          </div>
+        </div>
+        <div class="w3-container">
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Exalca technologies</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>India</p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>support@exalca.com</p>
+          
+        </div>
+      </div>
+
+      <!-- End Left Column -->
+    </div>
+    <!-- Right Column -->
+    <div class="w3-twothird">
+
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-10"><i
+            class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal">Welcome~{{user}}</i></h2>
+        <h6 class="w3-text-teal" align="right" style="cursor: pointer;"><a (click)="logout()">Sign Out</a> </h6>
+        <div class="w3-container">
+          <h3 class="w3-opacity" align="center"><b>Dashboard Screen</b></h3>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>{{today | date:'MMMM yyyy'}} - <span
+              class="w3-tag w3-teal w3-round">Current</span> </h6>
+        </div>
+      </div>
+
+      <div class="w3-container w3-card w3-black" style="width: 102%;">
+        <div class="w3-card  item1 w3-hover-indigo" style="width: 25%; float:left; border: 2px solid black;height:11rem;">
+          <hr>
+          <h3 align="center">{{today | date:'yyyy/MM/dd'}}</h3>
+          <h2 align="center">{{today | date:'hh:mm:ss aaa'}}</h2>
+          <hr>
+        </div>
+        <div class="w3-container w3-card w3-hover-indigo" [ngClass]="{'item1':location=='bangalore','item2':location!='bangalore'}"
+          style="width: 12%; float:left; border: 2px solid black;height: 10rem;cursor:pointer;"
+          (click)="locationch('bangalore')">
+          <hr>
+          <span class="loctext">Bangalore</span>
+          <div class="pbox">
+            <img src="assets/images/icon2.png" style="width:20%" alt="Avatar" align="left"> <img
+            src="assets/images/icon1.svg" style="width:20%" alt="Avatar" align="center"> <img
+            src="assets/images/vibrate.png" style="width:20%" alt="Avatar" align="center"> <img
+            src="assets/images/humidity.png" style="width:20%" alt="Avatar" align="center">
+          </div>
+          <hr>
+        </div>
+        <div class="w3-container w3-card w3-hover-indigo" [ngClass]="{'item1':location=='coimbatore','item2':location!='coimbatore'}"
+          style="width: 12%; float:left; border: 2px solid black;height: 10rem;cursor:pointer;"
+          (click)="locationch('coimbatore')">
+          <hr>
+          <span class="loctext">Coimbatore</span>
+          <div class="pbox">
+            <img src="assets/images/icon2.png" style="width:20%" alt="Avatar" align="left"> <img
+            src="assets/images/icon1.svg" style="width:20%" alt="Avatar" align="center"> <img
+            src="assets/images/vibrate.png" style="width:20%" alt="Avatar" align="center"> <img
+            src="assets/images/humidity.png" style="width:20%" alt="Avatar" align="center">
+          </div>
+          <hr>
+        </div>
+        <div class="w3-container w3-card w3-hover-indigo" [ngClass]="{'item1':location=='chennai','item2':location!='chennai'}"
+          style="width: 12%; float:left; border: 2px solid black;height: 10rem;cursor:pointer;"
+          (click)="locationch('chennai')">
+          <hr>
+          <span class="loctext">Chennai</span>
+          <div class="pbox">
+            <img src="assets/images/icon2.png" style="width:20%" alt="Avatar" align="left"> <img
+            src="assets/images/icon1.svg" style="width:20%" alt="Avatar" align="center"> <img
+            src="assets/images/vibrate.png" style="width:20%" alt="Avatar" align="center"> <img
+            src="assets/images/humidity.png" style="width:20%" alt="Avatar" align="center">
+          </div>
+          <hr>
+        </div>
+        <div class="w3-container w3-card w3-hover-indigo" [ngClass]="{'item1':location=='hydrabad','item2':location!='hydrabad'}"
+          style="width: 12%; float:left; border: 2px solid black;height: 10rem;cursor:pointer;"
+          (click)="locationch('hydrabad')">
+          <hr>
+          <span class="loctext">Hydrabad</span>
+          <div class="pbox">
+            <img src="assets/images/icon2.png" style="width:20%" alt="Avatar" align="left"> <img
+            src="assets/images/icon1.svg" style="width:20%" alt="Avatar" align="center"> <img
+            src="assets/images/vibrate.png" style="width:20%" alt="Avatar" align="center"> <img
+            src="assets/images/humidity.png" style="width:20%" alt="Avatar" align="center">
+          </div>
+          <hr>
+        </div>
+        <div class="w3-container w3-card  item1 w3-hover-indigo"
+          style="width: 25%; float:left; border: 2px solid black;height:11rem;">
+          <hr>
+          <h5 align="center">Mode</h5>
+          <h3 align="center"><b>OFFICE</b></h3>
+          <hr>
+        </div>
+      </div>
+      <div class="w3-container w3-card w3-black" style="width: 102%;">
+        <div class="w3-container w3-card  item1 w3-hover-indigo"
+          style="width: 25%;  height: 18rem; border: 2px solid black;">
+          <hr>
+          <h2 align="center">{{today | date:'EEEE'}}</h2>
+          <hr>
+          <div class="pbox1">
+            <img src="assets/images/icon2.png" style="width:30%" alt="Avatar" align="left">
+            <span style="font-size: 28px;font-weight: bold;">25.32 °C</span>
+          </div>
+          <h6 align="left">min:0 / max:35</h6>
+          <hr>
+        </div>
+        <div class="w3-container w3-card  item2 w3-hover-indigo"
+          style="width: 12%; float:left; border: 2px solid black;height: 12rem;">
+          <hr>
+          <span class="ptitle">TEMPERATURE</span>
+          <div class="pbox1">
+            <img src="assets/images/icon2.png" style="width:33%" alt="Avatar" align="left">
+            <h1>
+              {{temperature}}
+            </h1>
+          </div>
+
+          <hr>
+        </div>
+        <div class="w3-container w3-card  item2 w3-hover-indigo"
+          style="width: 12%; float:left; border: 2px solid black;height: 12rem;">
+          <hr>
+          <span class="ptitle">HUMIDITY</span> 
+          <div class="pbox1">
+            <img src="assets/images/humidity.png" style="width:33%" alt="Avatar" align="left">
+            <h1>
+              {{humidity}}
+            </h1>
+          </div>
+
+          <hr>
+        </div>
+        <div class="w3-container w3-card  item2 w3-hover-indigo"
+          style="width: 12%; float:left; border: 2px solid black;height: 12rem;">
+          <hr>
+          <span class="ptitle">VIBRATION</span>
+          <div class="pbox1">
+            <img src="assets/images/vibrate.png" style="width:33%" alt="Avatar" align="left">
+            <h1>
+              {{vibration}}
+            </h1>
+          </div>
+
+          <hr>
+        </div>
+        <div class="w3-container w3-card  item2 w3-hover-indigo"
+          style="width: 12%; float:left; border: 2px solid black;height: 12rem;">
+          <hr>
+          <span class="ptitle">CURRENT</span>
+          <div class="pbox1">
+            <img src="assets/images/icon1.svg" style="width:30%" alt="Avatar" align="left">
+            <h1>
+              {{current}}
+            </h1>
+          </div>
+          
+          <hr>
+        </div>
+        <div class="w3-container w3-card  item1 w3-hover-indigo"
+          style="width: 25%; float:left; border: 2px solid black;height:12rem;">
+          <hr>
+          <h5 align="center">Power</h5>
+          <h3 align="center"><b>Checknow</b></h3>
+          <hr>
+        </div>
+
+
+      </div>
+      <!-- End Right Column -->
+    </div>
+    <!-- End Grid -->
+  </div>
+  <!-- End Page Container -->
+</div>

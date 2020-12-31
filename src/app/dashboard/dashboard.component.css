@@ -1,0 +1,21 @@
+.ptitle{
+    font-size: 13px;
+    font-weight: 500;
+}
+.pbox{
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+.pbox1{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+.loctext{
+    font-size: 18px;
+    font-weight: 500;
+}

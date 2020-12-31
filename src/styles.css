@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+.w3-indigo,.w3-hover-indigo:hover{color:blue!important;background-color:#00ffbf!important}
+.w3-third,.w3-third{width:23.33333%}
+.w3-twothird,.w3-twothird{width:76.33333%}
+.item1 {  
+  background-color:#3f51b5;  
+  float:left; 
+   
+}
+.item3 {  
+  background-color:#3f51b5;  
+  float:left;
+   
+}
+.item2 {  
+  background-color:grey;  
+  float:left; 
+   
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
